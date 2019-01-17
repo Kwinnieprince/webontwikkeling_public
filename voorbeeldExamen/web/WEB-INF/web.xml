@@ -32,4 +32,7 @@
         <param-name>sslmode</param-name>
         <param-value>prefer</param-value>
     </context-param>
+    <error-page>
+        <location>/error.jsp</location>
+    </error-page>
 </web-app>

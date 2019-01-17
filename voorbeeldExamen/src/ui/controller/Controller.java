@@ -6,6 +6,7 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -61,6 +62,18 @@ public class Controller extends HttpServlet {
             RequestHandler handler;
             handler = controllerFactory.getController(action, productService);
             destination = handler.handleRequest(request, response);
+        }
+        Cookie[] cookies = request.getCookies();
+        for(int i = 0; i < cookies.length; i++){
+            if (cookies[i].getName().equals("veggie")) {
+                if (cookies[i].getValue().equals("yes")){
+                    request.setAttribute("veg", "wel");
+                }else if(cookies[i].getValue().equals("no")) {
+                    request.setAttribute("veg", "niet");
+                }else {
+                    request.setAttribute("veg", "");
+                }
+            }
         }
         if(!sendRedirect){
             RequestDispatcher view = request.getRequestDispatcher(destination);
