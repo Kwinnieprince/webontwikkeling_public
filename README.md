@@ -2,8 +2,6 @@
 
 ## contents
 * Labo 1
-* Labo 2
-* labo 3
 * WebVoorbeeldExamen
 * extra_herhaling_web
 * voorbeeldExamen
@@ -22,12 +20,6 @@ Webshop with every labo this contains:
 > * Week 10 - Post Redirect Get
 
 - - - -
-
-### Labo 2 & labo 3
-
- those are more fuckups and it was impossible to create a new project every week
-
- - - - -
 
  ### WebVoorbeeldExamen, extra_herhaling_web and voorbeeldExamen
  These contain the exam, every of them works
