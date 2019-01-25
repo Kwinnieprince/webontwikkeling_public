@@ -21,16 +21,15 @@
     </error-page>
     <context-param>
     <param-name>url</param-name>
-    <param-value>jdbc:postgresql://databanken.ucll.be:61819/2TX38</param-value>
+    <param-value>***</param-value>
 </context-param>
     <context-param>
         <param-name>user</param-name>
-        <param-value>local_r0712411</param-value>
+        <param-value>***</param-value>
     </context-param>
     <context-param>
         <param-name>password</param-name>
-        <!--<param-value>ç=Z!3o;J5andq</param-value>-->
-        <param-value>S5lkx6gàBZ2D9p</param-value>
+        <param-value>***</param-value>
     </context-param>
     <context-param>
         <param-name>ssl</param-name>
